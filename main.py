@@ -30,7 +30,9 @@ while True:
             elif values["-UNITS-"] == "sec to min":
                 output = round(float(input_value) / 60, 2)
                 output_string = f"{input_value} sec are {output} min."
+        else:
+            output_string = 'Please enter a number'
 
-            window["-OUTPUT-"].update(output_string)
+        window["-OUTPUT-"].update(output_string)
 
 window.close()
