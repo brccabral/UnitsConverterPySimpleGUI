@@ -24,6 +24,9 @@ while True:
             if values["-UNITS-"] == "km to mile":
                 output = round(float(input_value) * 0.6214, 2)
                 output_string = f"{input_value} km are {output} miles."
+            elif values["-UNITS-"] == "kg to pound":
+                output = round(float(input_value) * 2.20462, 2)
+                output_string = f"{input_value} kg are {output} pounds."
 
             window["-OUTPUT-"].update(output_string)
 
