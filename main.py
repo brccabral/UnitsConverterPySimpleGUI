@@ -16,4 +16,9 @@ while True:
     if event == sg.WIN_CLOSED:
         break
 
+    if event == "Button":
+        print("Button pressed")
+    elif event == "Test Button":
+        print("Test Button pressed")
+
 window.close()
