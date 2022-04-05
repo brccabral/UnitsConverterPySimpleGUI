@@ -27,6 +27,9 @@ while True:
             elif values["-UNITS-"] == "kg to pound":
                 output = round(float(input_value) * 2.20462, 2)
                 output_string = f"{input_value} kg are {output} pounds."
+            elif values["-UNITS-"] == "sec to min":
+                output = round(float(input_value) / 60, 2)
+                output_string = f"{input_value} sec are {output} min."
 
             window["-OUTPUT-"].update(output_string)
 
